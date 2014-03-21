@@ -68,6 +68,7 @@ describe DbToFile::Unloader do
       File.directory?('db/db_to_file/users/ewout-quax_1').must_equal true
       File.directory?('db/db_to_file/users/test-example_2').must_equal true
       File.directory?('db/db_to_file/users/3').must_equal true
+      File.directory?('db/db_to_file/users/4').must_equal true
     end
 
     it 'builds the files for the record-files' do
