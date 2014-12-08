@@ -108,7 +108,7 @@ module DbToFile
             found_files << subdirfile
           end
         end
-        if File.file?(full_file)
+        if File.file?(full_file) && file[0] != '.'
           found_files << full_file
         end
       end
